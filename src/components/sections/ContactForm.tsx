@@ -25,14 +25,27 @@ const contacts = [
 ];
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    // TODO: wire up to backend / email service
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("sent");
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    setStatus(res.ok ? "sent" : "error");
   }
 
   return (
@@ -74,6 +87,7 @@ export default function ContactForm() {
                 <label className="text-sm font-semibold text-[#26a9b3]">Name</label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Enter your name"
                   required
                   className="w-full px-5 py-3.5 rounded-full border border-[#e0e0e0] text-sm text-[#343b44] placeholder:text-[#343b44]/35 outline-none focus:border-[#26a9b3] focus:ring-2 focus:ring-[#26a9b3]/15 transition-all duration-200"
@@ -86,6 +100,7 @@ export default function ContactForm() {
                   <label className="text-sm font-semibold text-[#26a9b3]">Email</label>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Enter your e-mail"
                     required
                     className="w-full px-5 py-3.5 rounded-full border border-[#e0e0e0] text-sm text-[#343b44] placeholder:text-[#343b44]/35 outline-none focus:border-[#26a9b3] focus:ring-2 focus:ring-[#26a9b3]/15 transition-all duration-200"
@@ -95,6 +110,7 @@ export default function ContactForm() {
                   <label className="text-sm font-semibold text-[#26a9b3]">Phone</label>
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="Enter your phone"
                     className="w-full px-5 py-3.5 rounded-full border border-[#e0e0e0] text-sm text-[#343b44] placeholder:text-[#343b44]/35 outline-none focus:border-[#26a9b3] focus:ring-2 focus:ring-[#26a9b3]/15 transition-all duration-200"
                   />
@@ -105,6 +121,7 @@ export default function ContactForm() {
               <div className="flex flex-col gap-1.5">
                 <label className="text-sm font-semibold text-[#26a9b3]">Message</label>
                 <textarea
+                  name="message"
                   placeholder="Put your message here"
                   required
                   rows={5}
@@ -127,6 +144,12 @@ export default function ContactForm() {
                   "Send your message"
                 )}
               </button>
+
+              {status === "error" && (
+                <p className="text-sm text-red-500 text-center">
+                  Something went wrong. Please try again or email us directly.
+                </p>
+              )}
 
             </form>
           )}
