@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-primary: #26a9b3;
+  --color-primary-dark: #22595d;
+  --color-text: #343b44;
+  --color-overlay: #16191d99;
+  --color-bg: #ffffff;
+  --color-bg-muted: #fafafa;
+  --color-border: #f5f5f5;
+
+  /* Typography */
+  --font-display: "SF Pro Display", ".SF NS Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "PP Neue Montreal", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+  --text-4xl: 48px;
+  --text-5xl: 64px;
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-15: 60px;
+  --spacing-20: 80px;
+  --spacing-25: 100px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 9px;
+  --radius-lg: 17px;
+  --radius-pill: 154px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 14px 143.1px #0000000d;
+  --shadow-icon: 0 15.1429px 43.198px #00000026;
+  --shadow-subtle: 0 6.47px 143.1px #0000000d;
+
+  /* Container */
+  --container-max: 1280px;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #343b44;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
