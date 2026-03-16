@@ -29,7 +29,7 @@ export default function CTA() {
           className="shrink-0"
         >
           <Link
-            href="#contact"
+            href="/contact"
             className="px-8 py-3.5 rounded-full border-2 border-white/30 text-white text-sm font-semibold hover:border-white hover:bg-white/10 transition-colors duration-200"
           >
             Partner with Us

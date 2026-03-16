@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <p className="text-xs font-semibold text-white/30 uppercase tracking-widest">Follow Us</p>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/greenyieldco"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
