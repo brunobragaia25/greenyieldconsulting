@@ -95,7 +95,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <span className="text-white/25 text-[10px]">Desenvolvido por</span>
+            <span className="text-white/25 text-[10px]">Developed by</span>
             <Image src="/icons/devz-logo.svg" alt="DevzDesign" width={90} height={14} />
           </Link>
         </div>
