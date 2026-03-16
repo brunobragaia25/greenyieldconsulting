@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -11,16 +12,19 @@ const contacts = [
     name: "Camilo Angarita",
     role: "Strategy & Business Development",
     email: "Camilo.angarita@greenyieldconsulting.com",
+    image: "/team/foto-camilo.png",
   },
   {
     name: "Niousha Roshani",
     role: "Sustainability & Capital Markets",
     email: "Niousha@greenyieldconsulting.com",
+    image: "/team/foto-niousha.png",
   },
   {
     name: "Andrea Toto Brocchi",
     role: "Energy Systems & Project Development",
     email: "Andrea@greenyieldconsulting.com",
+    image: null,
   },
 ];
 
@@ -178,11 +182,15 @@ export default function ContactForm() {
               initial={{ opacity: 0, x: 16 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.45, ease, delay: 0.2 + i * 0.08 }}
-              className="group flex items-center gap-4 bg-white rounded-[18px] border border-[#efefef] p-5 shadow-[0_2px_16px_#0000000a] hover:border-[#26a9b3]/25 hover:shadow-[0_4px_24px_#0000000f] transition-all duration-200 flex-1"
+              className="group flex items-start gap-4 bg-white rounded-[18px] border border-[#efefef] p-5 shadow-[0_2px_16px_#0000000a] hover:border-[#26a9b3]/25 hover:shadow-[0_4px_24px_#0000000f] transition-all duration-200 flex-1"
             >
               {/* Avatar */}
-              <div className="w-10 h-10 rounded-full bg-[#26a9b3]/10 flex items-center justify-center shrink-0 group-hover:bg-[#26a9b3]/18 transition-colors">
-                <Icon icon="solar:user-circle-bold-duotone" className="text-[#26a9b3]" width={24} />
+              <div className="w-10 h-10 rounded-full bg-[#26a9b3]/10 overflow-hidden flex items-center justify-center shrink-0">
+                {c.image ? (
+                  <Image src={c.image} alt={c.name} width={40} height={40} className="w-full h-full object-cover" />
+                ) : (
+                  <Icon icon="solar:user-circle-bold-duotone" className="text-[#26a9b3]" width={24} />
+                )}
               </div>
 
               <div className="min-w-0">
