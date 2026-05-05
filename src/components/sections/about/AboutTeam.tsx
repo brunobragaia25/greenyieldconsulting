@@ -149,7 +149,7 @@ export default function AboutTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-5"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-5"
           >
             {experts.map((e) => (
               <MemberCard key={e.name} {...e} />

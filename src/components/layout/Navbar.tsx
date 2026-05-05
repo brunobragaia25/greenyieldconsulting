@@ -43,30 +43,33 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [menuOpen]);
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       onMouseLeave={() => setDropdownOpen(false)}
-      className={`fixed z-50 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`fixed z-50 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] top-0 left-0 right-0 bg-white border-b border-[#f5f5f5] ${
         scrolled
-          ? "top-3 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[1280px] bg-white/60 backdrop-blur-xl rounded-full shadow-[0_8px_32px_#00000014] border border-white/80"
-          : "top-0 left-0 right-0 bg-white border-b border-[#f5f5f5]"
+          ? "md:top-3 md:left-1/2 md:-translate-x-1/2 md:w-[calc(100%-2rem)] md:max-w-[1280px] md:bg-white/60 md:backdrop-blur-xl md:rounded-full md:shadow-[0_8px_32px_#00000014] md:border-white/80"
+          : ""
       }`}
     >
       <div className={`max-w-[1280px] mx-auto px-6 flex items-center justify-between transition-all duration-500 ${scrolled ? "py-[20px]" : "h-[72px]"}`}>
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <Icon icon="solar:leaf-bold-duotone" className="text-[#26a9b3]" width={30} height={30} />
-          <div className="flex flex-col leading-none">
-            <span className="font-bold text-[#343b44] text-[17px] tracking-tight">
-              Green<span className="text-[#26a9b3]">Yield</span>
-            </span>
-            <span className="text-[8.5px] font-semibold text-[#343b44]/45 tracking-[0.2em] uppercase mt-0.5">
-              Consulting
-            </span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <img src="/logo-hav.png" alt="GreenYield" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -122,9 +125,10 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden md:block absolute top-full left-0 right-0 bg-white border-t border-[#f0f0f0] shadow-[0_16px_48px_#00000014] rounded-[20px] mt-2"
+            className="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[1280px] bg-white border-t border-[#f0f0f0] shadow-[0_16px_48px_#00000014] rounded-[20px] mt-0"
+            onMouseEnter={() => setDropdownOpen(true)}
           >
-            <div className="max-w-[1280px] mx-auto px-6 py-8 grid grid-cols-[220px_1fr] gap-10">
+            <div className="max-w-[1280px] mx-auto px-6 py-12 grid grid-cols-[220px_1fr] gap-10 h-full items-center">
 
               {/* Left — intro panel */}
               <div className="flex flex-col justify-between">
@@ -176,10 +180,10 @@ export default function Navbar() {
         {menuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: "100dvh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden bg-white border-t border-[#f5f5f5] overflow-hidden"
+            className="md:hidden bg-white border-t border-[#f5f5f5] overflow-y-auto fixed top-[72px] left-0 right-0"
           >
             <div className="max-w-[1280px] mx-auto px-6 py-4 flex flex-col gap-1">
               <Link href="/" onClick={() => setMenuOpen(false)} className="text-sm text-[#343b44]/70 py-2">Home</Link>

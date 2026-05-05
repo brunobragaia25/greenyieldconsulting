@@ -16,7 +16,7 @@ export const team: TeamMember[] = [
     name: "Mariana Barrientos",
     role: "M&A & Capital deployment",
     group: "expert",
-    image: null, // replace with "/team/mariana.jpg"
+    image: "/team/Mariana Barrientos.png",
     linkedin: "#",
     email: "Mariana@greenyieldconsulting.com",
     bio: [
@@ -81,7 +81,7 @@ export const team: TeamMember[] = [
     name: "Andrea Toto Brocchi",
     role: "Energy Systems & Project Development",
     group: "managing_partner",
-    image: null, // replace with "/team/andrea.jpg"
+    image: "/team/Andrea Toto.png",
     linkedin: "#",
     email: "Andrea@greenyieldconsulting.com",
     bio: [
@@ -103,7 +103,7 @@ export const team: TeamMember[] = [
     name: "Steven Morgan",
     role: "Financial advisory & Capital Strategy",
     group: "expert",
-    image: null, // replace with "/team/steven.jpg"
+    image: "/team/Steven Morgan.png",
     linkedin: "#",
     email: "Steven@greenyieldconsulting.com",
     bio: [
@@ -125,7 +125,7 @@ export const team: TeamMember[] = [
     name: "Murefu Barasa",
     role: "Energy systems & project development",
     group: "expert",
-    image: null, // replace with "/team/murefu.jpg"
+    image: "/team/Murefu Barasa.png",
     linkedin: "#",
     email: "Murefu@greenyieldconsulting.com",
     bio: [
@@ -147,7 +147,7 @@ export const team: TeamMember[] = [
     name: "Julian Gonzales",
     role: "Legal Counsel",
     group: "expert",
-    image: "/team/foto-julian.png", // Using existing photo
+    image: "/team/Julian Gonzales.png",
     linkedin: "#",
     email: "Julian@greenyieldconsulting.com",
     bio: [
@@ -161,50 +161,6 @@ export const team: TeamMember[] = [
       "Contract Negotiation",
       "Regulatory Compliance",
       "Deal Structuring",
-    ],
-  },
-  {
-    slug: "jose-miguel-carneiro",
-    name: "Jose Miguel Carneiro",
-    role: "Carbon Credits & Sustainability",
-    group: "expert",
-    image: null, // replace with "/team/jose.jpg"
-    linkedin: "#",
-    email: "",
-    bio: [
-      "José Miguel is a seasoned climate and sustainability expert with deep experience in greenhouse gas accounting, low-carbon project development, and urban climate policy. He served as Climate Change Manager for the City of Rio de Janeiro, where he led the city's GHG inventory and supported the design of major climate initiatives, including energy efficiency programs, adaptation strategies, and nature-based solutions.",
-      "He is also the founder and Executive Director of MOWA – Carbon Neutral, a Brazilian startup that advises cities, companies, and institutions on their transition to low-carbon development through emissions reduction, offsetting strategies, and sustainability integration.",
-      "At Green Yield, José Miguel leads efforts related to carbon credit structuring and commercialization—bringing his technical and regulatory expertise to support the development of bankable, climate-aligned projects within the firm's pipeline. His background in emissions quantification, climate finance, and multi-stakeholder coordination strengthens Green Yield's ability to unlock added value through carbon markets and ensure environmental integrity in project development.",
-      "José Miguel holds a certification in Urban Greenhouse Gas Emissions Inventory from the City Climate Planner program (GBCI–WRI–ICLEI–World Bank). His work is rooted in a systems-thinking approach to climate action—combining technical rigor, policy fluency, and a commitment to scalable, equitable impact.",
-    ],
-    expertise: [
-      "Carbon Markets",
-      "Carbon Credit Structuring",
-      "Voluntary Carbon Standards",
-      "Sustainability Reporting",
-      "Climate Finance",
-    ],
-  },
-  {
-    slug: "andres-quintero",
-    name: "Andres Quintero",
-    role: "Compliance & Financial Markets",
-    group: "expert",
-    image: null, // replace with "/team/andres.jpg"
-    linkedin: "#",
-    email: "",
-    bio: [
-      "Andrés is a financial markets compliance specialist with over a decade of experience in global markets, regulatory requirements and risk management. Having worked across major financial institutions—including Citibank, Macquarie Group and Westpac Institution Bank — he brings deep expertise in navigating complex regulatory environments and optimizing regulatory execution across borders.",
-      "At Green Yield, Andrés brings a unique institutional perspective to energy finance—helping structure investment frameworks that align with international compliance standards. His skillset spans onboarding, deal documentation, client eligibility, bilateral derivatives, regulatory reporting, disclosures and financial risk management, with a focus on ensuring transparency, integrity, and resilience in every transaction.",
-      "Andrés holds a Master in Finance from UNSW Sydney and a Bachelor of Economics from Macquarie University. With a global career rooted in Australia and Latin America, he combines technical precision with cross-cultural fluency to help Green Yield bridge capital markets with climate-aligned development goals.",
-      "Driven by a strong commitment to responsible finance and long-term value creation, Andrés plays a key role in shaping the firm's internal governance, financial structure, and investor readiness for project pipelines in emerging markets.",
-    ],
-    expertise: [
-      "Regulatory Compliance",
-      "Financial Markets",
-      "Investment Banking",
-      "Risk Management",
-      "Cross-border Transactions",
     ],
   },
 ];

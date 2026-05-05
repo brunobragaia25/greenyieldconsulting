@@ -29,27 +29,18 @@ export default function Footer() {
           <div className="flex flex-col justify-between gap-8">
             <div className="flex flex-col gap-5">
               <Link href="/" className="flex items-center gap-2.5 w-fit">
-                <Icon icon="solar:leaf-bold-duotone" className="text-white" width={30} />
-                <div className="flex flex-col leading-none">
-                  <span className="font-bold text-white text-[17px] tracking-tight">
-                    Green<span className="text-[#26a9b3]">Yield</span>
-                  </span>
-                  <span className="text-[8.5px] font-semibold text-white/40 tracking-[0.2em] uppercase mt-0.5">
-                    Consulting
-                  </span>
-                </div>
+                <Image src="/logo-footer.png" alt="GreenYield" width={120} height={32} className="h-auto" />
               </Link>
 
               <div className="flex flex-col gap-0.5">
-                <span className="text-[#26a9b3] font-semibold text-2xl leading-none">Smart Connections</span>
-                <span className="text-[#26a9b3] font-semibold text-2xl leading-none">Real Yield</span>
-                <span className="text-[#26a9b3] font-semibold text-2xl leading-none">Lasting Progress</span>
+                <span className="text-[#26a9b3] font-semibold text-[28px] leading-none">Driving Progress</span>
+                <span className="text-[#26a9b3] font-semibold text-[28px] leading-none">Through Smart</span>
+                <span className="text-[#26a9b3] font-semibold text-[28px] leading-none">Connections.</span>
               </div>
             </div>
 
-            <p className="text-white/40 text-sm leading-relaxed max-w-[300px]">
-              Aligning capital, projects, and people to accelerate investable
-              solutions in energy and sustainability.
+            <p className="text-white/40 text-[12px] leading-relaxed max-w-[300px]">
+              We connect capital, projects, and partners across the energy and sustainability value chain — structuring transactions that convert pipelines into de-risked, investable assets with durable returns and measurable impact.
             </p>
           </div>
 

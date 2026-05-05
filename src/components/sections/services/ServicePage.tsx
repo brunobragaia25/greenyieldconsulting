@@ -70,26 +70,39 @@ export default function ServicePage({ service }: { service: ServiceItem }) {
               ))}
             </div>
 
-            <h2 className="text-lg font-semibold text-[#343b44] mb-6">What We Offer</h2>
-            <div className="flex flex-col gap-5">
+            <h2 className="text-lg font-semibold text-[#343b44] mb-6">Our support includes:</h2>
+            <div className="flex flex-col gap-5 mb-8">
               {service.offerings.map((item, i) => (
                 <motion.div
                   key={item.title}
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.45, ease, delay: 0.15 + i * 0.07 }}
-                  className="flex gap-4 p-5 rounded-[14px] border border-[#f0f0f0] bg-[#fafafa] hover:border-[#26a9b3]/20 hover:bg-[#f5fdfc] transition-colors duration-200"
+                  className="flex gap-4 p-5 rounded-[14px] border border-[#f0f0f0] bg-[#fafafa] hover:border-[#26a9b3]/20 hover:bg-[#f5fdfc] transition-colors duration-200 items-center"
                 >
-                  <div className="w-8 h-8 rounded-[8px] bg-[#26a9b3]/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-[8px] bg-[#26a9b3]/10 flex items-center justify-center shrink-0">
                     <div className="w-2 h-2 rounded-full bg-[#26a9b3]" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-[#343b44] mb-1">{item.title}</p>
-                    <p className="text-sm text-[#343b44]/60 leading-relaxed">{item.description}</p>
+                    <p className="text-sm font-semibold text-[#343b44]">{item.title}</p>
+                    {item.description && (
+                      <p className="text-sm text-[#343b44]/60 leading-relaxed">{item.description}</p>
+                    )}
                   </div>
                 </motion.div>
               ))}
             </div>
+
+            {service.slug === "carbon-credits" && (
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, ease, delay: 0.3 }}
+                className="text-[#343b44]/65 text-sm leading-relaxed"
+              >
+                We bridge de-risked projects with layered capital structures — equity, project finance, and hybrid models.
+              </motion.p>
+            )}
           </motion.div>
 
           {/* Right — CTA */}

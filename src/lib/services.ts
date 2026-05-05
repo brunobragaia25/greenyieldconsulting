@@ -12,21 +12,38 @@ export const services: ServiceItem[] = [
     slug: "project-owner",
     label: "Project Owner",
     icon: "solar:sun-2-bold-duotone",
-    tagline: "Turn your pipeline into investment-ready assets",
+    tagline: "Strengthen projects to reach financial close and maximize value",
     description: [
-      "Green Yield brings proven regional and international experience in structuring renewable energy projects and managing institutional capital to support the financial close of sustainable infrastructure initiatives.",
-      "Over the years, our team has built a robust network of global investors and strategic relationships with both local and international financial institutions. This positions us to design and deliver tailored financing solutions—across both debt and equity structures—aligned with the specific needs of each client and project.",
+      "We strengthen projects to reach financial close and maximize value.",
     ],
     offerings: [
       {
-        title: "Access to Capital and Strategic Partnerships",
-        description:
-          "We connect projects with a network of equity investors, debt providers, and EPC contractors, facilitating the financial and operational support necessary to advance energy projects efficiently.",
+        title: "Capital Structuring and Financing Strategy",
+        description: "",
       },
       {
-        title: "Carbon Credit Structuring and Monetization",
-        description:
-          "We assist project owners in structuring and commercializing carbon credits, enabling them to generate additional revenue streams and enhance the overall value proposition of their energy projects.",
+        title: "Commercial Negotiation and Deal Structuring",
+        description: "",
+      },
+      {
+        title: "Due Diligence Coordination",
+        description: "Permitting, land, grid, technical design",
+      },
+      {
+        title: "Identification of Value Leakage Points",
+        description: "",
+      },
+      {
+        title: "Investor-Grade Data Room Preparation",
+        description: "",
+      },
+      {
+        title: "Off-Taker Sourcing",
+        description: "",
+      },
+      {
+        title: "Carbon Credit Commercialization",
+        description: "",
       },
     ],
   },
@@ -34,21 +51,38 @@ export const services: ServiceItem[] = [
     slug: "epc",
     label: "EPC",
     icon: "solar:sledgehammer-bold-duotone",
-    tagline: "Connect your capabilities to the right projects",
+    tagline: "Connect EPCs with capital, partners, and liquidity pathways",
     description: [
-      "Green Yield connects EPC firms with both qualified project owners and financing partners to help unlock new business opportunities and ensure project viability.",
-      "With regional and international experience in renewable energy, we support EPCs from early engagement through financial close—leveraging our network of developers, investors, and banks to accelerate execution and align incentives across stakeholders.",
+      "We connect EPCs with capital, partners, and liquidity pathways.",
     ],
     offerings: [
       {
-        title: "Access to Project Opportunities",
-        description:
-          "We connect EPC firms with vetted project developers, enabling them to secure construction mandates and expand their project portfolios.",
+        title: "Project Scouting",
+        description: "",
       },
       {
-        title: "Facilitation of Project Financing",
-        description:
-          "We assist EPCs in accessing capital by linking them with financiers, ensuring the necessary funding is in place for successful project execution.",
+        title: "Access to Investors and Equity Partners",
+        description: "",
+      },
+      {
+        title: "Buyers for Asset Rotation",
+        description: "",
+      },
+      {
+        title: "Liquidity Injection",
+        description: "Project finance, equity partnerships",
+      },
+      {
+        title: "Secure Financing",
+        description: "",
+      },
+      {
+        title: "Off-Taker Scouting",
+        description: "",
+      },
+      {
+        title: "Carbon Credit Integration",
+        description: "",
       },
     ],
   },
@@ -56,26 +90,30 @@ export const services: ServiceItem[] = [
     slug: "off-taker",
     label: "Off-Taker",
     icon: "solar:buildings-bold-duotone",
-    tagline: "Source clean energy with confidence and structure",
+    tagline: "Structure energy transition solutions aligned with ESG and decarbonization objectives",
     description: [
-      "Green Yield supports corporate and institutional off-takers in designing and implementing strategies to meet their energy transition goals—securing cleaner, more affordable energy through expert guidance.",
-      "Our consulting services help off-takers identify and assess renewable project opportunities, connect with credible developers and EPCs, and access financing partners aligned with their sustainability objectives. While we do not structure PPAs, we guide the process to ensure each solution is financially viable, technically sound, and aligned with long-term energy and cost optimization targets.",
+      "We structure energy transition solutions aligned with ESG and decarbonization objectives.",
     ],
     offerings: [
       {
         title: "Energy Transition Structuring",
-        description:
-          "We design and implement tailored energy transition strategies, aligning with your operational goals and sustainability targets.",
+        description: "",
       },
       {
         title: "ESG and Carbon Offset Integration",
-        description:
-          "Our expertise ensures your projects meet Environmental, Social, and Governance (ESG) criteria, incorporating carbon offset solutions to enhance environmental impact.",
+        description: "",
       },
       {
-        title: "Project Financing Facilitation",
-        description:
-          "We connect you with financiers to secure the necessary capital expenditure (CAPEX) for your energy projects, ensuring financial viability and scalability.",
+        title: "Project Financing Solutions",
+        description: "",
+      },
+      {
+        title: "EPC Sourcing",
+        description: "",
+      },
+      {
+        title: "Asset Rotation and Liquidity Structuring",
+        description: "",
       },
     ],
   },
@@ -85,19 +123,36 @@ export const services: ServiceItem[] = [
     icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",
     description: [
-      "Green Yield helps project developers unlock additional value through the strategic commercialization of carbon credits, aligning financial, environmental, and reputational goals.",
-      "Our team has deep knowledge of carbon markets and leverages a trusted network of international buyers and platforms to ensure effective monetization of verified emission reductions. From credit certification strategies to market access and contract negotiation, we provide end-to-end support that maximizes returns while maintaining compliance with leading sustainability standards.",
+      "We originate and structure transactions aligned with institutional investment standards.",
     ],
     offerings: [
       {
-        title: "Project Commercialization and Strategic Partnerships",
-        description:
-          "We support carbon credit project developers by connecting them with reputable buyers and strategic partners, while working with specialized financial firms to structure their credits into climate-backed securities. This enhances transparency, reduces risk, and increases appeal to institutional investors.",
+        title: "Project Scouting and Pipeline Origination",
+        description: "",
       },
       {
-        title: "Comprehensive Carbon Credit Services",
-        description:
-          "We provide end-to-end support in the structuring and commercialization of carbon credits, ensuring alignment with market standards and maximizing project value.",
+        title: "Access to EPC and Joint Venture Partners",
+        description: "",
+      },
+      {
+        title: "Transaction Management and Due Diligence Coordination",
+        description: "",
+      },
+      {
+        title: "Risk Identification and Timeline Assessment",
+        description: "",
+      },
+      {
+        title: "Project Optimization",
+        description: "Technology, sizing, hybridization, phasing",
+      },
+      {
+        title: "Off-Taker Identification",
+        description: "",
+      },
+      {
+        title: "Carbon Credit Structuring",
+        description: "",
       },
     ],
   },

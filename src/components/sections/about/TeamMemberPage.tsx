@@ -30,6 +30,7 @@ export default function TeamMemberPage({ member }: { member: TeamMember }) {
                   width={112}
                   height={112}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: "center 70%" }}
                 />
               ) : (
                 <Icon icon="solar:user-circle-bold-duotone" className="text-[#26a9b3]/40" width={64} />
@@ -47,23 +48,20 @@ export default function TeamMemberPage({ member }: { member: TeamMember }) {
               </p>
 
               <div className="flex items-center gap-3 mt-2">
-                <Link
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="w-9 h-9 rounded-full bg-[#26a9b3]/10 hover:bg-[#26a9b3]/20 flex items-center justify-center transition-colors"
-                >
-                  <Icon icon="solar:linkedin-bold" className="text-[#26a9b3]" width={17} />
-                </Link>
-                {member.email && (
-                  <Link
-                    href={`mailto:${member.email}`}
-                    aria-label="Email"
-                    className="w-9 h-9 rounded-full bg-[#26a9b3]/10 hover:bg-[#26a9b3]/20 flex items-center justify-center transition-colors"
-                  >
-                    <Icon icon="solar:letter-bold-duotone" className="text-[#26a9b3]" width={17} />
-                  </Link>
+                {member.group === "managing_partner" ? (
+                  // Managing Partners: only email
+                  member.email && (
+                    <Link
+                      href={`mailto:${member.email}`}
+                      aria-label="Email"
+                      className="w-9 h-9 rounded-full bg-[#26a9b3]/10 hover:bg-[#26a9b3]/20 flex items-center justify-center transition-colors"
+                    >
+                      <Icon icon="solar:letter-bold-duotone" className="text-[#26a9b3]" width={17} />
+                    </Link>
+                  )
+                ) : (
+                  // Experts: no icons
+                  null
                 )}
               </div>
             </div>
