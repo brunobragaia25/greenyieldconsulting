@@ -7,10 +7,10 @@ import { Icon } from "@iconify/react";
 const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 const clients = [
-  { label: "Project Owner",  href: "/services/project-owner",  icon: "solar:sun-2-bold-duotone" },
-  { label: "EPC",            href: "/services/epc",            icon: "solar:sledgehammer-bold-duotone" },
-  { label: "Off-Taker",      href: "/services/off-taker",      icon: "solar:buildings-bold-duotone" },
-  { label: "Carbon Credits", href: "/services/carbon-credits", icon: "solar:leaf-bold-duotone" },
+  { label: "Project Owner",      href: "/services/project-owner",        icon: "solar:sun-2-bold-duotone" },
+  { label: "EPC",                href: "/services/epc",                  icon: "solar:sledgehammer-bold-duotone" },
+  { label: "Off-Taker",          href: "/services/off-taker",            icon: "solar:buildings-bold-duotone" },
+  { label: "Financiers & Investors", href: "/services/financiers-investors", icon: "solar:wallet-bold-duotone" },
 ];
 
 const cardVariants: Variants = {

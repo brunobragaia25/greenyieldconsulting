@@ -81,8 +81,8 @@ export const services: ServiceItem[] = [
   },
   {
     slug: "carbon-credits",
-    label: "Carbon Credits",
-    icon: "solar:leaf-bold-duotone",
+    label: "Financiers & Investors",
+    icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",
     description: [
       "Green Yield helps project developers unlock additional value through the strategic commercialization of carbon credits, aligning financial, environmental, and reputational goals.",

@@ -26,6 +26,17 @@ export default function Services() {
     <section id="services" className="py-20 bg-[#f5f6f8]">
       <div className="max-w-[1280px] mx-auto px-6">
 
+        {/* Intro text */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center max-w-3xl mx-auto mb-16 text-[#343b44]/70 text-base leading-relaxed"
+        >
+          Sustainable progress doesn't happen in isolation — it is enabled by meaningful connection and effective execution. Well-timed partnerships unlock opportunity, mobilize resources, and accelerate progress. At the core of our work is a simple belief: when the right people come together, transformation follows.
+        </motion.p>
+
         {/* What we do */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -12,6 +12,28 @@ export type TeamMember = {
 
 export const team: TeamMember[] = [
   {
+    slug: "mariana-barrientos",
+    name: "Mariana Barrientos",
+    role: "M&A & Capital deployment",
+    group: "expert",
+    image: null, // replace with "/team/mariana.jpg"
+    linkedin: "#",
+    email: "Mariana@greenyieldconsulting.com",
+    bio: [
+      "Mariana is an infrastructure investor and board operator with a track record of building and reshaping platforms across energy, utilities, water, and digital networks. She has led major mergers, carve-outs, refinancings, and operational roadmaps for scaled assets across 15 countries. With $20bn+ of transaction experience and a career spanning PE, investment management, and advisory, she blends investor depth with hands-on governance and strategic problem-solving.",
+      "Mariana currently serves as a Principal at Basalt Infrastructure Partners, where she leads origination, investment execution, and value creation for a ~$3bn European core-plus/value-add fund. She has stewarded multiple platform-building and consolidation plays—most recently architecting the merger of FullFibre and Zzoomm to create the UK's fifth-largest FTTH (fibre-to-the-home) provider, and driving governance, integration, and strategic planning across scaled digital-infrastructure and industrial-water assets. Her board roles include Altnet Partners and Circle Infra Partners, where she has shaped operational strategy, refinancing, carve-outs, merger integration, and long-term capital structure.",
+      "Previously, Mariana was a Senior Director at CBRE Investment Management's global infrastructure program, leading co-investments and strategic partnerships with GPs on energy transition, utilities, and digital infrastructure—spanning battery storage, LNG regasification, district heating, and next-generation utility networks. Earlier, she was a Vice President in Citi's Power & Utilities Investment Banking franchise across London and the Americas, advising on landmark transactions in renewables, networks, and energy services, and structuring multibillion-euro financings across Europe and Latin America.",
+      "She holds an MBA from Northwestern University's Kellogg School of Management and master's and bachelor's degrees in economics from Fordham University and the University of Oklahoma, respectively.",
+    ],
+    expertise: [
+      "M&A Strategy",
+      "Capital Deployment",
+      "Infrastructure Investing",
+      "Corporate Governance",
+      "Energy Transition",
+    ],
+  },
+  {
     slug: "niousha-roshani",
     name: "Niousha Roshani",
     role: "Sustainability & Capital Markets",
@@ -77,6 +99,71 @@ export const team: TeamMember[] = [
     ],
   },
   {
+    slug: "steven-morgan",
+    name: "Steven Morgan",
+    role: "Financial advisory & Capital Strategy",
+    group: "expert",
+    image: null, // replace with "/team/steven.jpg"
+    linkedin: "#",
+    email: "Steven@greenyieldconsulting.com",
+    bio: [
+      "Steven Morgan is a senior financial markets and operations executive with over two decades of experience across global banking and capital markets. As a Managing Director at Citibank, he has led large-scale platforms supporting equity, fixed income, and prime finance businesses across multiple regions.",
+      "Throughout his career, Steve has held global leadership roles spanning capital markets operations and securities infrastructure. He has overseen complex post-trade environments across more than 50 markets, working closely with institutional investors, financial institutions, and regulated entities.",
+      "Steve began his career at the Bank of England and later held senior roles at Lehman Brothers and Credit Suisse before joining Citi in 2009, where he went on to lead global teams across multiple continents.",
+      "At Green Yield, Steve supports the structuring and execution of complex transactions by bringing institutional-grade rigor, strong governance frameworks, and deep capital markets experience—helping ensure projects meet the standards required for large-scale capital deployment.",
+    ],
+    expertise: [
+      "Capital Markets",
+      "Financial Advisory",
+      "Transaction Structuring",
+      "Capital Strategy",
+      "Operations Management",
+    ],
+  },
+  {
+    slug: "murefu-barasa",
+    name: "Murefu Barasa",
+    role: "Energy systems & project development",
+    group: "expert",
+    image: null, // replace with "/team/murefu.jpg"
+    linkedin: "#",
+    email: "Murefu@greenyieldconsulting.com",
+    bio: [
+      "Murefu Barasa is an energy access and sustainability expert with over 20 years of experience advancing renewable energy and clean cooking solutions across emerging markets. As the Founding Partner and Executive Chair of EED Advisory Limited, he has led projects across more than 15 countries in Africa, as well as in Brazil and the United States. Through its partnership with Green Yield, EED supports the sourcing of high-quality projects and the identification of energy opportunities to accelerate investment and drive progress across the African continent.",
+      "He has worked with institutions such as the World Bank, national governments, and development partners to design energy access strategies, conduct market assessments, and support investment frameworks for underserved regions. His experience includes leading Kenya's national clean cooking strategy toward universal access by 2028, managing technical assistance facilities, and delivering programs on green finance and ESG.",
+      "Murefu combines strong technical expertise with deep on-the-ground market knowledge and stakeholder engagement capabilities, enabling him to translate complex challenges into scalable, investment-ready opportunities.",
+      "At Green Yield, he supports the origination and structuring of energy access and distributed energy projects, leveraging his regional expertise, institutional relationships, and track record in driving impactful solutions across high-growth markets.",
+    ],
+    expertise: [
+      "Energy Access",
+      "Project Development",
+      "Market Assessment",
+      "Renewable Energy",
+      "Emerging Markets",
+    ],
+  },
+  {
+    slug: "julian-gonzales",
+    name: "Julian Gonzales",
+    role: "Legal Counsel",
+    group: "expert",
+    image: "/team/foto-julian.png", // Using existing photo
+    linkedin: "#",
+    email: "Julian@greenyieldconsulting.com",
+    bio: [
+      "Julian is a seasoned legal advisor specializing in civil, commercial, and public procurement law, with a strong track record in complex infrastructure and energy deals. His prior work at one of Latin America's top law firms placed him at the forefront of Colombia's largest PPP, EPC, and concession projects, where he provided legal guidance across all stages of structuring, bidding, and execution.",
+      "He has extensive experience drafting and negotiating high-value infrastructure contracts, designing legal and financial risk mitigation instruments, and advising on regulatory frameworks and government contracting procedures. His background also includes litigation related to public procurement and infrastructure disputes.",
+      "At Green Yield, Julian leads legal structuring for energy and capital intermediation transactions across Latin America and other emerging markets. He focuses on ensuring contractual soundness, regulatory compliance, and sovereign risk mitigation—strengthening the legal foundations of the firm's investment and project pipelines.",
+    ],
+    expertise: [
+      "Energy Law",
+      "Legal Structuring",
+      "Contract Negotiation",
+      "Regulatory Compliance",
+      "Deal Structuring",
+    ],
+  },
+  {
     slug: "jose-miguel-carneiro",
     name: "Jose Miguel Carneiro",
     role: "Carbon Credits & Sustainability",
@@ -118,27 +205,6 @@ export const team: TeamMember[] = [
       "Investment Banking",
       "Risk Management",
       "Cross-border Transactions",
-    ],
-  },
-  {
-    slug: "julian-gonzales-torres",
-    name: "Julian Gonzales Torres",
-    role: "Legal, Corporate & Financial Affairs",
-    group: "expert",
-    image: null, // replace with "/team/julian.jpg"
-    linkedin: "#",
-    email: "",
-    bio: [
-      "Julian is a seasoned legal advisor specializing in civil, commercial, and public procurement law, with a strong track record in complex infrastructure and energy deals. His prior work at one of Latin America's top law firms placed him at the forefront of Colombia's largest PPP, EPC, and concession projects, where he provided legal guidance across all stages of structuring, bidding, and execution.",
-      "He has extensive experience drafting and negotiating high-value infrastructure contracts, designing legal and financial risk mitigation instruments, and advising on regulatory frameworks and government contracting procedures. His background also includes litigation related to public procurement and infrastructure disputes.",
-      "At Green Yield, Julian leads legal structuring for energy and capital intermediation transactions across Latin America and other emerging markets. He focuses on ensuring contractual soundness, regulatory compliance, and sovereign risk mitigation—strengthening the legal foundations of the firm's investment and project pipelines.",
-    ],
-    expertise: [
-      "Energy Law",
-      "Corporate Governance",
-      "Deal Structuring",
-      "Financial Compliance",
-      "Contract Negotiation",
     ],
   },
 ];

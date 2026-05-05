@@ -25,9 +25,9 @@ const services = [
     tagline: "Source clean energy with confidence and structure",
   },
   {
-    label: "Carbon Credits",
+    label: "Financiers & Investors",
     href: "/services/carbon-credits",
-    icon: "solar:leaf-bold-duotone",
+    icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",
   },
 ];
