@@ -8,10 +8,10 @@ import { Icon } from "@iconify/react";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Project Owner", href: "#project-owner" },
-  { label: "EPC", href: "#epc" },
-  { label: "Off Taker", href: "#off-taker" },
-  { label: "Financiers & Investors", href: "#carbon-credits" },
+  { label: "Project Owner", href: "/services/project-owner" },
+  { label: "EPC", href: "/services/epc" },
+  { label: "Off Taker", href: "/services/off-taker" },
+  { label: "Financiers & Investors", href: "/services/carbon-credits" },
 ];
 
 export default function Footer() {

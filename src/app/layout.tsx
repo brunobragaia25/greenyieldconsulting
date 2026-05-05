@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description:
     "Aligning capital, projects, and people to accelerate investable solutions in energy and sustainability.",
   keywords: ["sustainability", "energy", "consulting", "green", "yield", "ESG"],
+  icons: {
+    icon: "/team/favicon.png",
+  },
   openGraph: {
     title: "Green Yield Consulting",
     description: "Smart Connections, Real Yield, Lasting Progress",
