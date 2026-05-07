@@ -24,7 +24,7 @@ const contacts = [
     name: "Andrea Toto Brocchi",
     role: "Energy Systems & Project Development",
     email: "Andrea@greenyieldconsulting.com",
-    image: null,
+    image: "/team/Andrea Toto.png",
   },
 ];
 

@@ -158,10 +158,11 @@ function OtherServices({ currentSlug }: { currentSlug: string }) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease, delay: 0.35 + i * 0.07 }}
+            className="h-full"
           >
             <Link
               href={`/services/${s.slug}`}
-              className="group flex flex-col gap-4 p-5 rounded-[16px] border border-[#f0f0f0] hover:border-[#26a9b3]/20 hover:shadow-[0_4px_20px_#0000000a] transition-all duration-200"
+              className="group flex flex-col gap-4 p-5 rounded-[16px] border border-[#f0f0f0] hover:border-[#26a9b3]/20 hover:shadow-[0_4px_20px_#0000000a] transition-all duration-200 h-full"
             >
               <div className="w-10 h-10 rounded-[10px] bg-[#26a9b3]/10 flex items-center justify-center group-hover:bg-[#26a9b3]/15 transition-colors">
                 <Icon icon={s.icon} className="text-[#26a9b3]" width={22} />
