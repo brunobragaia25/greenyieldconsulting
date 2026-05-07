@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Project Owner", href: "/services/project-owner" },
   { label: "EPC", href: "/services/epc" },
   { label: "Off Taker", href: "/services/off-taker" },
-  { label: "Financiers & Investors", href: "/services/carbon-credits" },
+  { label: "Financiers & Investors", href: "/services/financiers-investors" },
 ];
 
 export default function Footer() {

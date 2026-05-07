@@ -118,7 +118,7 @@ export const services: ServiceItem[] = [
     ],
   },
   {
-    slug: "carbon-credits",
+    slug: "financiers-investors",
     label: "Financiers & Investors",
     icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",

@@ -26,7 +26,7 @@ const services = [
   },
   {
     label: "Financiers & Investors",
-    href: "/services/carbon-credits",
+    href: "/services/financiers-investors",
     icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",
   },

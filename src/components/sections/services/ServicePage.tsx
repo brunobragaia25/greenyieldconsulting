@@ -93,7 +93,7 @@ export default function ServicePage({ service }: { service: ServiceItem }) {
               ))}
             </div>
 
-            {service.slug === "carbon-credits" && (
+            {service.slug === "financiers-investors" && (
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
