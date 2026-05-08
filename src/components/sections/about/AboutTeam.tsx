@@ -72,37 +72,6 @@ function MemberCard({
 export default function AboutTeam() {
   return (
     <>
-      {/* Our Team — description */}
-      <section className="py-20 bg-white">
-        <div className="max-w-[1280px] mx-auto px-6 max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease }}
-          >
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#26a9b3] mb-6">Our Team</h2>
-            <p className="text-[#343b44]/70 text-sm leading-relaxed mb-5">
-              The GreenYield team brings together a multidisciplinary group of professionals with{" "}
-              <strong className="font-semibold text-[#343b44]">
-                deep expertise in renewable energy, project finance, and sustainable infrastructure.
-              </strong>{" "}
-              With{" "}
-              <strong className="font-semibold text-[#343b44]">
-                over 70 years of combined experience and more than $450 million in funding managed
-              </strong>
-              , our diverse backgrounds include corporate strategy, investment banking, and
-              development consulting.
-            </p>
-            <p className="text-[#343b44]/70 text-sm leading-relaxed">
-              Our work spans globally, with a particular focus on emerging markets, advising on
-              clean energy, carbon markets, and financial compliance. This unique blend of
-              technical, strategic, and financial acumen allows us to deliver tailored, high-impact
-              solutions across the energy transition landscape.
-            </p>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Managing Partners */}
       <section className="py-16 bg-[#f5f6f8]">

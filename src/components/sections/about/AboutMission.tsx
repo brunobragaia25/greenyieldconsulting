@@ -32,7 +32,7 @@ export default function AboutMission() {
             </p>
 
             <p className="text-[#343b44]/60 text-sm leading-relaxed mb-8">
-              With over 90 years of combined experience, our team has led clean energy and finance initiatives managing more than $450M in funding across multiple markets.
+              With over 90 years of combined experience, our team has led clean energy and finance initiatives managing more than $750M in funding across multiple markets.
             </p>
 
             {/* Mission & Vision */}
