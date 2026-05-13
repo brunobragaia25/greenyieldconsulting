@@ -3,6 +3,7 @@ export type ServiceItem = {
   label: string;
   icon: string;
   tagline: string;
+  banner: string;
   description: string[];
   offerings: { title: string; description: string }[];
 };
@@ -13,6 +14,7 @@ export const services: ServiceItem[] = [
     label: "Project Owner",
     icon: "solar:sun-2-bold-duotone",
     tagline: "Strengthen projects to reach financial close and maximize value",
+    banner: "/team/project-owner-banner.jpeg",
     description: [
       "We strengthen projects to reach financial close and maximize value.",
     ],
@@ -52,6 +54,7 @@ export const services: ServiceItem[] = [
     label: "EPC",
     icon: "solar:sledgehammer-bold-duotone",
     tagline: "Connect EPCs with capital, partners, and liquidity pathways",
+    banner: "/team/epc-banner.jpeg",
     description: [
       "We connect EPCs with capital, partners, and liquidity pathways.",
     ],
@@ -91,6 +94,7 @@ export const services: ServiceItem[] = [
     label: "Off-Taker",
     icon: "solar:buildings-bold-duotone",
     tagline: "Structure energy transition solutions aligned with ESG and decarbonization objectives",
+    banner: "/team/off-taker-banner.jpeg",
     description: [
       "We structure energy transition solutions aligned with ESG and decarbonization objectives.",
     ],
@@ -122,6 +126,7 @@ export const services: ServiceItem[] = [
     label: "Financiers & Investors",
     icon: "solar:wallet-bold-duotone",
     tagline: "Unlock the value of your sustainability commitments",
+    banner: "/team/financiers-banner.jpeg",
     description: [
       "We originate and structure transactions aligned with institutional investment standards.",
     ],

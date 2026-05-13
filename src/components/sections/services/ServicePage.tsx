@@ -13,28 +13,30 @@ export default function ServicePage({ service }: { service: ServiceItem }) {
     <div className="pt-[72px] min-h-screen bg-white">
 
       {/* Hero */}
-      <div className="bg-[#f5f6f8] border-b border-[#efefef]">
-        <div className="max-w-[1280px] mx-auto px-6 py-16">
+      <div className="relative border-b border-[#efefef] overflow-hidden min-h-[430px]">
+        <img src={service.banner} alt={service.label} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.3))" }} />
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 min-h-[430px] flex items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="flex flex-col sm:flex-row items-start sm:items-center gap-8"
+            className="flex flex-col sm:flex-row items-start sm:items-center gap-8 w-full justify-between"
           >
             {/* Icon */}
-            <div className="w-20 h-20 rounded-[18px] bg-[#26a9b3]/10 flex items-center justify-center shrink-0 ring-4 ring-white shadow-[0_8px_30px_#0000001a]">
-              <Icon icon={service.icon} className="text-[#26a9b3]" width={40} />
+            <div className="w-20 h-20 rounded-[18px] bg-white/10 flex items-center justify-center shrink-0 ring-4 ring-white/20 shadow-[0_8px_30px_#0000001a]">
+              <Icon icon={service.icon} className="text-white" width={40} />
             </div>
 
             {/* Info */}
             <div className="flex-1">
-              <span className="inline-block text-xs font-semibold text-[#26a9b3] uppercase tracking-widest mb-2">
+              <span className="inline-block text-xs font-semibold text-white/60 uppercase tracking-widest mb-2">
                 Our Services
               </span>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#343b44] mb-2">
+              <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 {service.label}
               </h1>
-              <p className="text-sm text-[#343b44]/55 leading-relaxed max-w-xl">
+              <p className="text-sm text-white/65 leading-relaxed max-w-xl">
                 {service.tagline}
               </p>
             </div>
@@ -42,7 +44,7 @@ export default function ServicePage({ service }: { service: ServiceItem }) {
             {/* Back */}
             <Link
               href="/"
-              className="flex items-center gap-1.5 text-sm text-[#343b44]/45 hover:text-[#343b44] transition-colors shrink-0"
+              className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white transition-colors shrink-0"
             >
               <Icon icon="solar:alt-arrow-left-bold" width={16} />
               Back to Home
