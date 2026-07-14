@@ -15,8 +15,8 @@ export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: "GreenYield Contact <onboarding@resend.dev>",
-    to: ["bragaiasouza@gmail.com"],
+    from: "GreenYield Contact <notificacoes@devzdesign.com.br>",
+    to: ["Camilo.angarita@greenyieldconsulting.com"],
     replyTo: email,
     subject: `New message from ${name}`,
     html: `
